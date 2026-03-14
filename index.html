@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile World | Accessories Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.jpeg" alt="Shop Logo">
+            </div>
+            <div class="shop-name">
+                <h1><B><I>NR CELL WORLD</I></B></h1>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for cases, airpods, chargers..." onkeyup="searchItems()">
+            <div class="categories">
+                <button class="cat-btn active" onclick="filterCat('all')">All</button>
+                <button class="cat-btn" onclick="filterCat('mobile')">Cases</button>
+                <button class="cat-btn" onclick="filterCat('Charger')">Chargers</button>
+                <button class="cat-btn" onclick="filterCat('Audio')">Audio</button>
+                <button class="cat-btn" onclick="filterCat('Watch')">Watches</button>
+                 <button class="cat-btn" onclick="filterCat('cable')">Cables</button>
+                  <button class="cat-btn" onclick="filterCat('adapter')">adapter</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="offer-page">
+        <div class="offer-card">
+            <h2>⚡ TODAY'S HOT DEALS ⚡</h2>
+            <p><del>10% Offer</del><br> <strong>UP TO 30% OFF</strong> <b></b></p>
+
+        </div>
+    </section>
+
+    <main id="product-grid" class="grid-container">
+        </main>
+
+    <section id="about" class="about-shop"> 
+        <h2>About NR Cell World</h2>
+        <p>Your one-stop destination for high-quality mobile accessories.
+        19 years of experience in providing top-notch products and exceptional customer service.
+         We specialize in premium cases, fast chargers, and the latest gadgets.</p>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
